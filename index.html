@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BaiTapJSBuoi1</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="container mt-5">
+
+    <div class="d-flex align-items-start">
+      <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <button class="nav-link active" id="v-pills-bai1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-bai1"
+          type="button" role="tab" aria-controls="v-pills-bai1" aria-selected="true"> Bài Tập 1</button>
+        <button class="nav-link" id="v-pills-bai2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-bai2"
+          type="button" role="tab" aria-controls="v-pills-bai2" aria-selected="false">Bài Tập 2</button>
+        <button class="nav-link" id="v-pills-bai3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-bai3"
+          type="button" role="tab" aria-controls="v-pills-bai3" aria-selected="false" bai3>Bài Tập 3</button>
+        <button class="nav-link" id="v-pills-bai4-tab" data-bs-toggle="pill" data-bs-target="#v-pills-bai4"
+          type="button" role="tab" aria-controls="v-pills-bai4" aria-selected="false">Bài Tập 4</button>
+        <button class="nav-link" id="v-pills-bai5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-bai5"
+          type="button" role="tab" aria-controls="v-pills-bai5" aria-selected="false">Bài Tập 5</button>
+      </div>
+      <div class="tab-content" id="v-pills-tabContent">
+        <!-- Bai 1 -->
+        <div class="tab-pane fade show active" id="v-pills-bai1" role="tabpanel" aria-labelledby="v-pills-bai1-tab"
+          tabindex="0">
+          <form>
+            <div class="row">
+              <div class="col">
+                <p>Luơng 1 ngày :100.000</p>
+                <input type="number" class="form-control w-50 " id="ngaylam" placeholder="Số ngày làm">
+                <br>
+              </div>
+              <button class="btn btn-primary w-25" type="button" id="btntinhluong">Tính Lương</button>
+             
+              <div class="alert alert-success mt-2 w-100" role="alert">
+                Tổng Lương  👉 <span id="tongluong"></span>
+              </div>
+            </div>
+          </form>
+
+        </div>
+        <!-- Bai 2 -->
+        <div class="tab-pane fade" id="v-pills-bai2" role="tabpanel" aria-labelledby="v-pills-bai2-tab" tabindex="0">
+          <form class="row gy-3 align-items-center px-2 bai2">
+            <div class="col-12 col-lg-4">
+                <input type="number" class="form-control form__input" id="num1" placeholder="Nhập số thứ 1">
+            </div>
+            <div class="col-12 col-lg-4">
+                <input type="number" class="form-control form__input" id="num2" placeholder="Nhập số thứ 2">
+            </div>
+            <div class="col-12 col-lg-4">
+                <input type="number" class="form-control form__input" id="num3" placeholder="Nhập số thứ 3">
+            </div>
+            <div class="col-12 col-lg-4">
+                <input type="number" class="form-control form__input" id="num4" placeholder="Nhập số thứ 4">
+            </div>
+            <div class="col-12 col-lg-4">
+                <input type="number" class="form-control form__input" id="num5" placeholder="Nhập số thứ 5">
+            </div>
+
+            <button class="btn btn-primary w-25" type="button" id="btntinhtb">Tính Trung Bình</button>
+            <div class="alert alert-success" role="alert">Trung Bình :
+                👉 <span id="txttb"></span>
+            </div>
+        </form>
+        </div>
+        <!-- Bai 3 -->
+        <div class="tab-pane fade" id="v-pills-bai3" role="tabpanel" aria-labelledby="v-pills-bai3-tab" tabindex="0">
+          <div class="tab-pane fade show active" id="v-pills-bai1" role="tabpanel" aria-labelledby="v-pills-bai1-tab"
+          tabindex="0">
+          <form>
+            <div class="row">
+              <div class="col">
+                <p>1 USD = 23.500 VND</p>
+                <input type="number" class="form-control w-50  " id="sotien" placeholder="Nhập số tiền quy đổi">
+                <br>
+              </div>
+              <button class="btn btn-primary w-25" type="button" id="btndoi">Quy đổi tiền </button>
+             
+              <div class="alert alert-success mt-2 w-100" role="alert">
+                  👉 <span id="txtdoi"></span>
+              </div>
+            </div>
+          </form>
+
+        </div>
+        </div>
+        <!-- Bai 4 -->
+        <div class="tab-pane fade" id="v-pills-bai4" role="tabpanel" aria-labelledby="v-pills-bai4-tab" tabindex="0">...
+        </div>
+        <!-- Bai 5 -->
+        <div class="tab-pane fade" id="v-pills-bai5" role="tabpanel" aria-labelledby="v-pills-bai5-tab" tabindex="0">...
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Jquery  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
