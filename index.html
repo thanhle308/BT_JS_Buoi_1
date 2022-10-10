@@ -40,9 +40,9 @@
                 <br>
               </div>
               <button class="btn btn-primary w-25" type="button" id="btntinhluong">Tính Lương</button>
-             
+
               <div class="alert alert-success mt-2 w-100" role="alert">
-                Tổng Lương  👉 <span id="tongluong"></span>
+                Tổng Lương 👉 <span id="tongluong"></span>
               </div>
             </div>
           </form>
@@ -50,55 +50,78 @@
         </div>
         <!-- Bai 2 -->
         <div class="tab-pane fade" id="v-pills-bai2" role="tabpanel" aria-labelledby="v-pills-bai2-tab" tabindex="0">
-          <form class="row gy-3 align-items-center px-2 bai2">
+          <form class="row gy-3 align-items-center px-2">
             <div class="col-12 col-lg-4">
-                <input type="number" class="form-control form__input" id="num1" placeholder="Nhập số thứ 1">
+              <input type="number" class="form-control form__input" id="num1" placeholder="Nhập số thứ 1">
             </div>
             <div class="col-12 col-lg-4">
-                <input type="number" class="form-control form__input" id="num2" placeholder="Nhập số thứ 2">
+              <input type="number" class="form-control form__input" id="num2" placeholder="Nhập số thứ 2">
             </div>
             <div class="col-12 col-lg-4">
-                <input type="number" class="form-control form__input" id="num3" placeholder="Nhập số thứ 3">
+              <input type="number" class="form-control form__input" id="num3" placeholder="Nhập số thứ 3">
             </div>
             <div class="col-12 col-lg-4">
-                <input type="number" class="form-control form__input" id="num4" placeholder="Nhập số thứ 4">
+              <input type="number" class="form-control form__input" id="num4" placeholder="Nhập số thứ 4">
             </div>
             <div class="col-12 col-lg-4">
-                <input type="number" class="form-control form__input" id="num5" placeholder="Nhập số thứ 5">
+              <input type="number" class="form-control form__input" id="num5" placeholder="Nhập số thứ 5">
             </div>
 
             <button class="btn btn-primary w-25" type="button" id="btntinhtb">Tính Trung Bình</button>
             <div class="alert alert-success" role="alert">Trung Bình :
-                👉 <span id="txttb"></span>
+              👉 <span id="txttb"></span>
             </div>
-        </form>
+          </form>
         </div>
         <!-- Bai 3 -->
         <div class="tab-pane fade" id="v-pills-bai3" role="tabpanel" aria-labelledby="v-pills-bai3-tab" tabindex="0">
           <div class="tab-pane fade show active" id="v-pills-bai1" role="tabpanel" aria-labelledby="v-pills-bai1-tab"
-          tabindex="0">
-          <form>
-            <div class="row">
-              <div class="col">
-                <p>1 USD = 23.500 VND</p>
-                <input type="number" class="form-control w-50  " id="sotien" placeholder="Nhập số tiền quy đổi">
-                <br>
-              </div>
-              <button class="btn btn-primary w-25" type="button" id="btndoi">Quy đổi tiền </button>
-             
-              <div class="alert alert-success mt-2 w-100" role="alert">
-                  👉 <span id="txtdoi"></span>
-              </div>
-            </div>
-          </form>
+            tabindex="0">
+            <form>
+              <div class="row">
+                <div class="col">
+                  <p>1 USD = 23.500 VND</p>
+                  <input type="number" class="form-control w-50  " id="sotien" placeholder="Nhập số tiền quy đổi">
+                  <br>
+                </div>
+                <button class="btn btn-primary w-25" type="button" id="btndoi">Quy đổi tiền </button>
 
-        </div>
+                <div class="alert alert-success mt-2 w-100" role="alert">
+                  👉 <span id="txtdoi"></span>
+                </div>
+              </div>
+            </form>
+
+          </div>
         </div>
         <!-- Bai 4 -->
-        <div class="tab-pane fade" id="v-pills-bai4" role="tabpanel" aria-labelledby="v-pills-bai4-tab" tabindex="0">...
+        <div class="tab-pane fade" id="v-pills-bai4" role="tabpanel" aria-labelledby="v-pills-bai4-tab" tabindex="0">
+          <form class="row gy-3 align-items-center px-2">
+            <div class="col-12 col-lg-4">
+              <input type="number" class="form-control form__input" id="dai" placeholder="Nhập chiều dài">
+            </div>
+            <div class="col-12 col-lg-4">
+              <input type="number" class="form-control form__input" id="rong" placeholder="Nhập chiều rộng">
+            </div>
+
+            <button class="btn btn-primary w-25" type="button" id="btntinh">Tính Trung Bình</button>
+            <div class="alert alert-success" role="alert"> 
+              👉 <span id="txtdairong"></span>
+            </div>
+          </form>
         </div>
         <!-- Bai 5 -->
-        <div class="tab-pane fade" id="v-pills-bai5" role="tabpanel" aria-labelledby="v-pills-bai5-tab" tabindex="0">...
+        <div class="tab-pane fade" id="v-pills-bai5" role="tabpanel" aria-labelledby="v-pills-bai5-tab" tabindex="0">
+          <form class="row gy-3 align-items-center px-2">
+            <div class="col-12 col-lg-4">
+              <input type="number" class="form-control form__input" id="so" placeholder="Nhập số có 2 chữ số">
+            </div>
+
+            <button class="btn btn-primary w-25" type="button" id="btntinh2so">Tính</button>
+            <div class="alert alert-success" role="alert"> 
+              👉 <span id="txt2so"></span>
+            </div>
+          </form>
         </div>
       </div>
     </div>
