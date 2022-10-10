@@ -64,7 +64,7 @@ document.getElementById("btntinhtb").onclick = tinhtrungbinh;
 function quydoi(){
     var sotien = document.getElementById("sotien").value;
     var tongquydoi = (Number(sotien)*23500);
-    document.getElementById("txtdoi").innerHTML = tongquydoi
+    document.getElementById("txtdoi").innerHTML = tongquydoi.toLocaleString('it-IT', {style : 'currency', currency : 'VND'});
 }
 
 document.getElementById("btndoi").onclick = quydoi;
